@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Race Your Dream Car - Home</title>
+     
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        nav {
+            background-color: #111f4e;
+            padding: 1rem 2rem;
+            display: flex;
+            gap: 2rem;
+            font-weight: 600;
+        }
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #facc15;
+        }
+        header {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        p {
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            line-height: 1.5;
+            color: #f3f4f6;
+        }
+        .banner {
+            max-width: 900px;
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.7);
+        }
+        .banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+        footer {
+            font-size: 0.875rem;
+            text-align: center;
+            padding: 1rem;
+            background-color: #111f4e;
+            color: #94a3b8;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            nav {
+                justify-content: center;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="products.html">Products</a>
+        <a href="rent.html">Rent Price</a>
+    </nav>
+    <header>
+        <h1>Race Your Dream Car</h1>
+        <p>Welcome to Race Your Dream Car! Discover your dream vehicles and explore the best products and experiences.</p>
+        <div class="banner">
+            <img src="McLaren Senna _ Eruma_Dsgn.jpg" alt="Dream Car Banner" />
+        </div>
+    </header>
+    <footer>&copy; 2025 Race Your Dream Car</footer>
+</body>
+</html>
