@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Race Your Dream Car - Login</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        nav {
+            background-color: #111f4e;
+            padding: 1rem 2rem;
+            display: flex;
+            gap: 2rem;
+            font-weight: 600;
+        }
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #facc15;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+        .login-form {
+            background-color: #1b265f;
+            padding: 2rem 3rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.7);
+            width: 100%;
+            max-width: 400px;
+        }
+        .login-form h2 {
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            font-size: 1.75rem;
+            text-align: center;
+            color: #facc15;
+        }
+        .login-form label {
+            display: block;
+            margin-bottom: 0.25rem;
+            font-weight: 600;
+        }
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 0.5rem 0.75rem;
+            border-radius: 6px;
+            border: none;
+            margin-bottom: 1.25rem;
+            font-size: 1rem;
+            outline: none;
+            box-sizing: border-box;
+        }
+        .login-form input[type="text"]:focus,
+        .login-form input[type="password"]:focus {
+            box-shadow: 0 0 8px #facc15;
+        }
+        .login-form button {
+            width: 100%;
+            background-color: #facc15;
+            color: #111f4e;
+            font-weight: 700;
+            font-size: 1.1rem;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .login-form button:hover {
+            background-color: #eab308;
+        }
+        footer {
+            font-size: 0.875rem;
+            text-align: center;
+            padding: 1rem;
+            background-color: #111f4e;
+            color: #94a3b8;
+        }
+        @media (max-width: 480px) {
+            .login-form {
+                padding: 1.5rem 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="products.html">Products</a>
+        <a href="rent.html">Rent Price</a>
+    </nav>
+    <main>
+        <form class="login-form" action="#" method="post" autocomplete="off" aria-label="Login form">
+            <h2>Login to Your Account</h2>
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text" required placeholder="Enter username" />
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" required placeholder="Enter password" />
+            <button type="submit">Login</button>
+        </form>
+    </main>
+    <footer>&copy; 2025 Race Your Dream Car</footer>
+</body>
+</html>

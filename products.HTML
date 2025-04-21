@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Race Your Dream Car - Products</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #f7f9fc;
+            color: #111f4e;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        nav {
+            background-color: #111f4e;
+            padding: 1rem 2rem;
+            display: flex;
+            gap: 2rem;
+            font-weight: 600;
+        }
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #facc15;
+        }
+        main {
+            flex: 1;
+            padding: 2.5rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: #111f4e;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.5rem;
+        }
+        a.card {
+            display: flex;
+            flex-direction: column;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(17,31,78,0.1);
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        a.card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(17,31,78,0.25);
+        }
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 1rem 1.25rem 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card-content h3 {
+            margin: 0 0 0.5rem;
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+        footer {
+            font-size: 0.875rem;
+            text-align: center;
+            padding: 1rem;
+            background-color: #111f4e;
+            color: #94a3b8;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            .card img {
+                height: 140px;
+            }
+        }
+    </style>
+</head>
+<body>
+<nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="login.html">Login</a>
+    <a href="products.html">Products</a>
+    <a href="rent.html">Rent Price</a>
+</nav>
+<main>
+    <h1>Dream Car Gallery</h1>
+    <div class="gallery">
+        <a class="card" href="https://www.ford.com/" target="_blank" rel="noopener noreferrer" aria-label="Ford Mustang official website">
+            <img src="download (1).jpg" alt="Ford Mustang" />
+            <div class="card-content">
+                <h3>Ford Mustang</h3>
+            </div>
+        </a>
+        <a class="card" href="https://www.lamborghini.com/" target="_blank" rel="noopener noreferrer" aria-label="Lamborghini Aventador official website">
+            <img src="lamborghini_aventador_lp700_4-wide_wrap1.jpg" alt="Lamborghini Aventador" />
+            <div class="card-content">
+                <h3>Lamborghini Aventador</h3>
+            </div>
+        </a>
+        <a class="card" href="https://www.tesla.com/" target="_blank" rel="noopener noreferrer" aria-label="Tesla Model S official website">
+            <img src="Porsche will pay Americans bountifully to switch from Tesla Model S to a Taycan.jpg" alt="Tesla Model S" />
+            <div class="card-content">
+                <h3>Tesla Model S</h3>
+            </div>
+        </a>
+        <a class="card" href="https://www.bugatti.com/" target="_blank" rel="noopener noreferrer" aria-label="Bugatti Chiron official website">
+            <img src="Download wallpaper 4096x2732 bugatti, chiron, side view, blue hd background.jpg" alt="Bugatti Chiron" />
+            <div class="card-content">
+                <h3>Bugatti Chiron</h3>
+            </div>
+        </a>
+        <a class="card" href="https://www.ferrari.com/" target="_blank" rel="noopener noreferrer" aria-label="Ferrari 488 official website">
+            <img src="Ferrari 488 Challenge Evo 2019.jpg" alt="Ferrari 488" />
+            <div class="card-content">
+                <h3>Ferrari 488</h3>
+            </div>
+        </a>
+        <a class="card" href="https://www.bmw.com/" target="_blank" rel="noopener noreferrer" aria-label="BMW M5 official website">
+            <img src="BMW M6 by Prior Design.jpg" alt="BMW M5" />
+            <div class="card-content">
+                <h3>BMW M5</h3>
+            </div>
+        </a>
+        <a class="card" href="https://www.mercedes-benz.com/" target="_blank" rel="noopener noreferrer" aria-label="Mercedes AMG GT official website">
+            <img src="The 2024 Mercedes-AMG GT Coupe_ A Symphony of Performance and Elegance Ajleeblog (1).jpg" alt="Mercedes AMG GT" />
+            <div class="card-content">
+                <h3>Mercedes AMG GT</h3>
+            </div>
+        </a>
+        <a class="card" href="https://www.audi.com/" target="_blank" rel="noopener noreferrer" aria-label="Audi R8 official website">
+            <img src="ABT XGT Audi R8 Street-Legal Race Car.jpg" alt="Audi R8" />
+            <div class="card-content">
+                <h3>Audi R8</h3>
+            </div>
+        </a>
+        <a class="card" href="https://www.porsche.com/" target="_blank" rel="noopener noreferrer" aria-label="Porsche 911 official website">
+            <img src="New Porsche 911 Turbo S By Mansory Combines Wild Body Kit With 900 HP.jpg" alt="Porsche 911" />
+            <div class="card-content">
+                <h3>Porsche 911</h3>
+            </div>
+        </a>
+        <a class="card" href="https://cars.mclaren.com/" target="_blank" rel="noopener noreferrer" aria-label="McLaren 720S official website">
+            <img src="McLaren P1_.jpg" alt="McLaren 720S" />
+            <div class="card-content">
+                <h3>McLaren 720S</h3>
+            </div>
+        </a>
+        <a class="card" href="https://www.rolls-roycemotorcars.com/" target="_blank" rel="noopener noreferrer" aria-label="Rolls Royce Phantom official website">
+            <img src="download (2).jpg" alt="Rolls Royce Phantom" />
+            <div class="card-content">
+                <h3>Rolls Royce Phantom</h3>
+            </div>
+        </a>
+        <a class="card" href="https://www.astonmartin.com/" target="_blank" rel="noopener noreferrer" aria-label="Aston Martin DB11 official website">
+            <img src="2019 ASTON MARTIN DBS SUPERLEGGERA.jpg" alt="Aston Martin DB11" />
+            <div class="card-content">
+                <h3>Aston Martin DB11</h3>
+            </div>
+        </a>
+        <a class="card" href="https://www.jaguar.com/" target="_blank" rel="noopener noreferrer" aria-label="Jaguar F-Type official website">
+            <img src="New 2022 Jaguar F-Type to rival McLaren - pictures _ Auto Express.jpg" alt="Jaguar F-Type" />
+            <div class="card-content">
+                <h3>Jaguar F-Type</h3>
+            </div>
+        </a>
+        <a class="card" href="https://www.chevrolet.com/" target="_blank" rel="noopener noreferrer" aria-label="Chevrolet Corvette official website">
+            <img src="2024 Chevrolet Corvette E-Ray First Ride Review_ Will Going Hybrid Ruin the Vette_.jpg" alt="Chevrolet Corvette" />
+            <div class="card-content">
+                <h3>Chevrolet Corvette</h3>
+            </div>
+        </a>
+        <a class="card" href="https://www.koenigsegg.com/" target="_blank" rel="noopener noreferrer" aria-label="Koenigsegg Jesko official website">
+            <img src="Koenigsegg Jesko Absolut Eyeing 330 MPH Record.jpg" alt="Koenigsegg Jesko" />
+            <div class="card-content">
+                <h3>Koenigsegg Jesko</h3>
+            </div>
+        </a>
+    </div>
+</main>
+<footer>&copy; 2025 Race Your Dream Car</footer>
+</body>
+</html>

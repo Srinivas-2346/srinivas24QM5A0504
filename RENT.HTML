@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Race Your Dream Car - Rent Prices</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #f7f9fc;
+            color: #111f4e;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        nav {
+            background-color: #111f4e;
+            padding: 1rem 2rem;
+            display: flex;
+            gap: 2rem;
+            font-weight: 600;
+        }
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #facc15;
+        }
+        main {
+            flex: 1;
+            padding: 2.5rem 1rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: #111f4e;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(17,31,78,0.1);
+            background: white;
+        }
+        thead {
+            background-color: #111f4e;
+            color: #facc15;
+        }
+        th, td {
+            padding: 1rem 1.25rem;
+            text-align: left;
+            border-bottom: 1px solid #e0e7ff;
+            font-weight: 600;
+        }
+        tbody tr:hover {
+            background-color: #fdf6d8;
+        }
+        footer {
+            font-size: 0.875rem;
+            text-align: center;
+            padding: 1rem;
+            background-color: #111f4e;
+            color: #94a3b8;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            th, td {
+                padding: 0.75rem 1rem;
+            }
+            table {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="login.html">Login</a>
+    <a href="products.html">Products</a>
+    <a href="rent.html">Rent Price</a>
+</nav>
+<main>
+    <h1>Car Rental Prices (INR)</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Car Model</th>
+                <th>Rent Price (INR/day)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Ford Mustang</td><td>12,000</td></tr>
+            <tr><td>Lamborghini Aventador</td><td>50,000</td></tr>
+            <tr><td>Tesla Model S</td><td>20,000</td></tr>
+            <tr><td>Bugatti Chiron</td><td>1,00,000</td></tr>
+            <tr><td>Ferrari 488</td><td>45,000</td></tr>
+            <tr><td>BMW M5</td><td>18,000</td></tr>
+            <tr><td>Mercedes AMG GT</td><td>38,000</td></tr>
+            <tr><td>Audi R8</td><td>26,000</td></tr>
+            <tr><td>Porsche 911</td><td>30,000</td></tr>
+            <tr><td>McLaren 720S</td><td>60,000</td></tr>
+            <tr><td>Rolls Royce Phantom</td><td>85,000</td></tr>
+            <tr><td>Aston Martin DB11</td><td>40,000</td></tr>
+            <tr><td>Jaguar F-Type</td><td>22,000</td></tr>
+            <tr><td>Chevrolet Corvette</td><td>19,000</td></tr>
+            <tr><td>Koenigsegg Jesko</td><td>1,20,000</td></tr>
+        </tbody>
+    </table>
+</main>
+<footer>&copy; 2025 Race Your Dream Car</footer>
+</body>
+</html>
